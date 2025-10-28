@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact – Dragon Studios Entertainment</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a
+            class="brand"
+            href="index.html"
+            aria-label="Dragon Studios Entertainment home"
+          >
+            <img src="images/A.png" alt="Dragon logo" width="36" height="36" />
+            <strong>Dragon Studios Entertainment</strong>
+          </a>
+          <div class="links" role="navigation" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="games.html">Games</a>
+            <a href="contact.html">Contact</a>
+            <a class="btn" href="login.html">Login</a>
+          </div>
+          <button
+            id="menuBtn"
+            class="btn alt menu-btn"
+            aria-controls="mobileDrawer"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="login.html">Login</a>
+    </div>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>Contact</h1>
+          <p class="lead">
+            Front‑end only form for now. Wire this up to your backend later.
+          </p>
+          <form
+            class="form card"
+            onsubmit="event.preventDefault(); alert('Form submitted (front‑end only).');"
+          >
+            <label for="name">Name</label>
+            <input id="name" name="name" required />
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required />
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="5" required></textarea>
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container inner">
+        <div>
+          <div class="brand" style="gap: 0.5rem">
+            <img src="images/A.png" alt="Dragon logo" width="28" height="28" />
+            <strong>Dragon Studios Entertainment</strong>
+          </div>
+          <p class="small">
+            © <span id="year"></span> Dragon Studios Entertainment. All rights
+            reserved.
+          </p>
+        </div>
+        <div class="small">
+          <a href="#">Privacy</a> · <a href="#">Terms</a> ·
+          <a href="mailto:contact@dragon.example">contact@dragon.example</a>
+        </div>
+      </div>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>

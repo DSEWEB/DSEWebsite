@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Games – Dragon Studios Entertainment</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a
+            class="brand"
+            href="index.html"
+            aria-label="Dragon Studios Entertainment home"
+          >
+            <img
+              src="images/A.png"
+              alt="Dragon logo"
+              width="36"
+              height="36"
+            />
+            <strong>Dragon Studios Entertainment</strong>
+          </a>
+          <div class="links" role="navigation" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="games.html">Games</a>
+            <a href="contact.html">Contact</a>
+            <a class="btn" href="login.html">Login</a>
+          </div>
+          <button
+            id="menuBtn"
+            class="btn alt menu-btn"
+            aria-controls="mobileDrawer"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="login.html">Login</a>
+    </div>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>Games</h1>
+          <p class="lead">
+            Browse our released titles and what’s currently in development.
+            Toggle tabs below.
+          </p>
+
+          <div class="tabs" role="tablist" aria-label="Games">
+            <button
+              id="tab-released"
+              role="tab"
+              aria-controls="panel-released"
+              aria-selected="true"
+            >
+              Released
+            </button>
+            <button
+              id="tab-dev"
+              role="tab"
+              aria-controls="panel-dev"
+              aria-selected="false"
+            >
+              In Development
+            </button>
+          </div>
+
+          <section
+            id="panel-released"
+            role="tabpanel"
+            aria-labelledby="tab-released"
+            class="tab-panel active"
+          >
+            <div class="grid cards">
+              <article class="card">
+                <img
+                  src="assets/games/skyward-circuit.jpg"
+                  alt="Skyward Circuit"
+                />
+                <h3>SKYWARD CIRCUIT</h3>
+                <p class="small">Arcade Racer • Cross‑platform</p>
+                <a class="btn" href="#">Learn More</a>
+              </article>
+            </div>
+          </section>
+
+          <section
+            id="panel-dev"
+            role="tabpanel"
+            aria-labelledby="tab-dev"
+            class="tab-panel"
+          >
+            <div class="grid cards">
+              <article class="card">
+                <img src="assets/games/ember-rift.jpg" alt="Ember Rift" />
+                <h3>EMBER RIFT</h3>
+                <p class="small">Action RPG • PC/Console</p>
+                <span class="badge">🔥 In Development</span>
+              </article>
+              <article class="card">
+                <img src="assets/games/mystic-signal.jpg" alt="Mystic Signal" />
+                <h3>MYSTIC SIGNAL</h3>
+                <p class="small">Narrative Puzzle • Mobile</p>
+                <span class="badge">🧩 Prototype</span>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <
+    <footer>
+      <div class="container inner">
+        <div>
+          <div class="brand" style="gap: 0.5rem">
+            <img
+              src="images/A.png"
+              alt="Dragon logo"
+              width="28"
+              height="28"
+            />
+            <strong>Dragon Studios Entertainment</strong>
+          </div>
+          <p class="small">
+            © <span id="year"></span> Dragon Studios Entertainment. All rights
+            reserved.
+          </p>
+        </div>
+        <div class="small">
+          <a href="#">Privacy</a> · <a href="#">Terms</a> ·
+          <a href="mailto:contact@dragon.example">SethDSE@proton.me</a>
+        </div>
+      </div>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>
