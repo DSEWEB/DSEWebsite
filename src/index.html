@@ -1,99 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dragon Studios Entertainment</title>
-<link rel="stylesheet" href="styles/base.css"/>
-<link rel="stylesheet" href="styles/theme.css"/>
-</head>
-<body>
-<!-- include header here -->
-<header>
-<div class="container">
-<nav>
-<a class="brand" href="index.html" aria-label="Dragon Studios Entertainment home">
-<img src="images/A.png" alt="Dragon logo" width="36" height="36"/>
-<strong>Dragon Studios Entertainment</strong>
-</a>
-<div class="links" role="navigation" aria-label="Primary">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="games.html">Games</a>
-<a href="contact.html">Contact</a>
-<a class="btn" href="login.html">Login</a>
-</div>
-<button id="menuBtn" class="btn alt menu-btn" aria-controls="mobileDrawer" aria-expanded="false">Menu</button>
-</nav>
-</div>
-</header>
-<div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="games.html">Games</a>
-<a href="contact.html">Contact</a>
-<a class="btn" href="login.html">Login</a>
-</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dragon Studios Entertainment</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+  </head>
+  <body>
+    <!-- include header here -->
+    <header>
+      <div class="container">
+        <nav>
+          <a
+            class="brand"
+            href="index.html"
+            aria-label="Dragon Studios Entertainment home"
+          >
+            <img src="images/A.png" alt="Dragon logo" width="36" height="36" />
+            <strong>Dragon Studios Entertainment</strong>
+          </a>
+          <div class="links" role="navigation" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="games.html">Games</a>
+            <a href="contact.html">Contact</a>
+            <a class="btn" href="login.html">Login</a>
+          </div>
+          <button
+            id="menuBtn"
+            class="btn alt menu-btn"
+            aria-controls="mobileDrawer"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="login.html">Login</a>
+    </div>
 
+    <main>
+      <section class="hero">
+        <div class="container wrap">
+          <div>
+            <span class="badge">🔥 Independent Game Studio</span>
+            <h1>Worlds Forged in Royal Purple & Neon Light.</h1>
+            <p>
+              We build character‑driven games with bold visuals and tight feel.
+              Explore our released titles and peek behind the curtain on what’s
+              in the forge.
+            </p>
+            <div class="cta">
+              <a class="btn" href="games.html">See Games</a>
+              <a class="btn alt" href="about.html">About the Studio</a>
+            </div>
+          </div>
+          <div class="card shadow">
+            <img
+              src="assets/hero.jpg"
+              alt="Dragon silhouette over neon skyline"
+            />
+          </div>
+        </div>
+      </section>
 
-<main>
-<section class="hero">
-<div class="container wrap">
-<div>
-<span class="badge">🔥 Independent Game Studio</span>
-<h1>Worlds Forged in Royal Purple & Neon Light.</h1>
-<p>We build character‑driven games with bold visuals and tight feel. Explore our released titles and peek behind the curtain on what’s in the forge.</p>
-<div class="cta">
-<a class="btn" href="games.html">See Games</a>
-<a class="btn alt" href="about.html">About the Studio</a>
-</div>
-</div>
-<div class="card shadow"><img src="assets/hero.jpg" alt="Dragon silhouette over neon skyline"/></div>
-</div>
-</section>
+      <section class="section">
+        <div class="container">
+          <h2>Featured</h2>
+          <p class="lead">
+            A quick look at what’s playable and what’s brewing.
+          </p>
+          <div class="grid cards">
+            <article class="card">
+              <img src="assets/games/sanity.jpg" alt="SANITY cover art" />
+              <h3>SANITY</h3>
+              <p class="small">Psychological Horror • PC</p>
+            </article>
+            <article class="card">
+              <img
+                src="assets/games/skyward-circuit.jpg"
+                alt="SKYWARD CIRCUIT cover art"
+              />
+              <h3>UNKNOWN</h3>
+              <p class="small">Not Available • N/A</p>
+            </article>
+            <article class="card">
+              <img
+                src="assets/games/mystic-signal.jpg"
+                alt="MYSTIC SIGNAL cover art"
+              />
+              <h3>UNKOWN</h3>
+              <p class="small">Not Available • N/A</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
 
-
-<section class="section">
-<div class="container">
-<h2>Featured</h2>
-<p class="lead">A quick look at what’s playable and what’s brewing.</p>
-<div class="grid cards">
-<article class="card">
-<img src="assets/games/ember-rift.jpg" alt="EMBER RIFT cover art"/>
-<h3>EMBER RIFT</h3>
-<p class="small">Action RPG • PC/Console</p>
-</article>
-<article class="card">
-<img src="assets/games/skyward-circuit.jpg" alt="SKYWARD CIRCUIT cover art"/>
-<h3>SKYWARD CIRCUIT</h3>
-<p class="small">Arcade Racer • Cross‑platform</p>
-</article>
-<article class="card">
-<img src="assets/games/mystic-signal.jpg" alt="MYSTIC SIGNAL cover art"/>
-<h3>MYSTIC SIGNAL</h3>
-<p class="small">Narrative Puzzle • Mobile</p>
-</article>
-</div>
-</div>
-</section>
-</main>
-
-
-<footer>
-<div class="container inner">
-<div>
-<div class="brand" style="gap:.5rem">
-<img src="images/A.png" alt="Dragon logo" width="28" height="28"/>
-<strong>Dragon Studios Entertainment</strong>
-</div>
-<p class="small">© <span id="year"></span> Dragon Studios Entertainment. All rights reserved.</p>
-</div>
-<div class="small">
-<a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="mailto:contact@dragon.example">contact@dragon.example</a>
-</div>
-</div>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
-</footer>
-<script src="scripts/app.js" defer></script>
-</body>
+    <footer>
+      <div class="container inner">
+        <div>
+          <div class="brand" style="gap: 0.5rem">
+            <img src="images/A.png" alt="Dragon logo" width="28" height="28" />
+            <strong>Dragon Studios Entertainment</strong>
+          </div>
+          <p class="small">
+            © <span id="year"></span> Dragon Studios Entertainment. All rights
+            reserved.
+          </p>
+        </div>
+        <div class="small">
+          <a href="#">Privacy</a> · <a href="#">Terms</a> ·
+          <a href="mailto:contact@dragon.example">Sethdse@proton.me</a>
+        </div>
+      </div>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+    <script src="scripts/app.js" defer></script>
+  </body>
 </html>

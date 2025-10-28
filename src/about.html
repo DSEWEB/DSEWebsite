@@ -1,76 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>About – Dragon Studios Entertainment</title>
-<link rel="stylesheet" href="styles/base.css"/>
-<link rel="stylesheet" href="styles/theme.css"/>
-</head>
-<body>
-<header>
-<div class="container">
-<nav>
-<a class="brand" href="index.html" aria-label="Dragon Studios Entertainment home">
-<img src="images/A.png" alt="Dragon logo" width="36" height="36"/>
-<strong>Dragon Studios Entertainment</strong>
-</a>
-<div class="links" role="navigation" aria-label="Primary">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="games.html">Games</a>
-<a href="contact.html">Contact</a>
-<a class="btn" href="login.html">Login</a>
-</div>
-<button id="menuBtn" class="btn alt menu-btn" aria-controls="mobileDrawer" aria-expanded="false">Menu</button>
-</nav>
-</div>
-</header>
-<div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="games.html">Games</a>
-<a href="contact.html">Contact</a>
-<a class="btn" href="login.html">Login</a>
-</div>
-<main>
-<section class="section">
-<div class="container">
-<h1>About the Studio</h1>
-<p class="lead">Dragon Studios Entertainment crafts games that blend expressive art, responsive control, and music that lingers. We’re small, independent, and deeply player‑focused.</p>
-<div class="grid" style="grid-template-columns:1fr 1fr">
-<div class="card">
-<h3>Mission</h3>
-<p>Create memorable, accessible experiences that invite mastery and spark community.</p>
-</div>
-<div class="card">
-<h3>Values</h3>
-<ul>
-<li>Player empathy first</li>
-<li>Craftsmanship over shortcuts</li>
-<li>Accessible by default</li>
-<li>Open, respectful collaboration</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-</main>
-<footer>
-<div class="container inner">
-<div>
-<div class="brand" style="gap:.5rem">
-<img src="images/A.png" alt="Dragon logo" width="28" height="28"/>
-<strong>Dragon Studios Entertainment</strong>
-</div>
-<p class="small">© <span id="year"></span> Dragon Studios Entertainment. All rights reserved.</p>
-</div>
-<div class="small">
-<a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="mailto:contact@dragon.example">contact@dragon.example</a>
-</div>
-</div>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
-</footer>
-<script src="scripts/app.js" defer></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About – Dragon Studios Entertainment</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a
+            class="brand"
+            href="index.html"
+            aria-label="Dragon Studios Entertainment home"
+          >
+            <img src="images/A.png" alt="Dragon logo" width="36" height="36" />
+            <strong>Dragon Studios Entertainment</strong>
+          </a>
+          <div class="links" role="navigation" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="games.html">Games</a>
+            <a href="contact.html">Contact</a>
+            <a class="btn" href="login.html">Login</a>
+          </div>
+          <button
+            id="menuBtn"
+            class="btn alt menu-btn"
+            aria-controls="mobileDrawer"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="login.html">Login</a>
+    </div>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>About the Studio</h1>
+          <p class="lead">
+            Dragon Studios Entertainment crafts games that blend expressive art,
+            responsive control, and music that lingers. We’re small,
+            independent, and deeply player‑focused.
+          </p>
+          <div class="grid" style="grid-template-columns: 1fr 1fr">
+            <div class="card">
+              <h3>Mission</h3>
+              <p>
+                Create memorable, accessible experiences that invite mastery and
+                spark community.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Values</h3>
+              <ul>
+                <li>Player empathy first</li>
+                <li>Craftsmanship over shortcuts</li>
+                <li>Accessible by default</li>
+                <li>Open, respectful collaboration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container inner">
+        <div>
+          <div class="brand" style="gap: 0.5rem">
+            <img src="images/A.png" alt="Dragon logo" width="28" height="28" />
+            <strong>Dragon Studios Entertainment</strong>
+          </div>
+          <p class="small">
+            © <span id="year"></span> Dragon Studios Entertainment. All rights
+            reserved.
+          </p>
+        </div>
+        <div class="small">
+          <a href="#">Privacy</a> · <a href="#">Terms</a> ·
+          <a href="mailto:contact@dragon.example">contact@dragon.example</a>
+        </div>
+      </div>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+    <script src="scripts/app.js" defer></script>
+  </body>
 </html>
